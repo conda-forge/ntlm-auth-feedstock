@@ -1,6 +1,6 @@
 {% set name = "ntlm-auth" %}
-{% set version = "1.0.5" %}
-{% set sha256 = "ae20b5050169410a6a2225c3db8b7e4771165bb35f95f6f64c24ec935e8c9fdf" %}
+{% set version = "1.0.6" %}
+{% set sha256 = "86d1d55562bfc57c539dba6c81c4e22f1db9860a0f778dd11fa72e7ae99a0c14" %}
 
 package:
   name: {{ name|lower }}
@@ -31,7 +31,7 @@ test:
 about:
   home: https://github.com/jborean93/ntlm-auth
   license: LGPL-3.0
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: LICENSE
   summary: 'Calculates NTLM Authentication codes'
 
   description: |
