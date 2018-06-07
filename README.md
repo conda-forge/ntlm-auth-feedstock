@@ -17,12 +17,15 @@ the order required and produce a base64 encoded value that can be attached to th
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/ntlm-auth-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ntlm-auth-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/ntlm-auth-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/ntlm-auth-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ntlm-auth/badges/version.svg)](https://anaconda.org/conda-forge/ntlm-auth)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ntlm-auth/badges/downloads.svg)](https://anaconda.org/conda-forge/ntlm-auth)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ntlm--auth-green.svg)](https://anaconda.org/conda-forge/ntlm-auth) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ntlm-auth.svg)](https://anaconda.org/conda-forge/ntlm-auth) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ntlm-auth.svg)](https://anaconda.org/conda-forge/ntlm-auth) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ntlm-auth.svg)](https://anaconda.org/conda-forge/ntlm-auth) |
 
 Installing ntlm-auth
 ====================

@@ -1,6 +1,6 @@
 {% set name = "ntlm-auth" %}
-{% set version = "1.0.6" %}
-{% set sha256 = "86d1d55562bfc57c539dba6c81c4e22f1db9860a0f778dd11fa72e7ae99a0c14" %}
+{% set version = "1.2.0" %}
+{% set sha256 = "7bc02a3fbdfee7275d3dc20fce8028ed8eb6d32364637f28be9e9ae9160c6d5c" %}
 
 package:
   name: {{ name|lower }}
