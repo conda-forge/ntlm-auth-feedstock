@@ -1,6 +1,6 @@
 {% set name = "ntlm-auth" %}
-{% set version = "1.1.0" %}
-{% set sha256 = "d4b21b85cbbf53ec1f16e435898eb9ab80f1e8f1571f0b7e2eb038c0517dd47a" %}
+{% set version = "1.2.0" %}
+{% set sha256 = "7bc02a3fbdfee7275d3dc20fce8028ed8eb6d32364637f28be9e9ae9160c6d5c" %}
 
 package:
   name: {{ name|lower }}
@@ -14,12 +14,12 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - six
