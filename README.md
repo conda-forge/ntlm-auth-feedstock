@@ -3,7 +3,7 @@ About ntlm-auth
 
 Home: https://github.com/jborean93/ntlm-auth
 
-Package license: LGPL-3.0
+Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
