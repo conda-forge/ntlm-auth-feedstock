@@ -1,6 +1,6 @@
 {% set name = "ntlm-auth" %}
-{% set version = "1.4.0" %}
-{% set sha256 = "350f2389c8ee5517f47db55a36ac2f8efc9742a60a678d6e2caa92385bdcaa9a" %}
+{% set version = "1.5.0" %}
+{% set sha256 = "c9667d361dc09f6b3750283d503c689070ff7d89f2f6ff0d38088d5436ff8543" %}
 
 package:
   name: {{ name|lower }}
@@ -14,15 +14,14 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
     - python
-    - six
 
 test:
   imports:
@@ -30,9 +29,9 @@ test:
 
 about:
   home: https://github.com/jborean93/ntlm-auth
-  license: LGPL-3.0
+  license: MIT
   license_file: LICENSE
-  summary: 'Calculates NTLM Authentication codes'
+  summary: Calculates NTLM Authentication codes
 
   description: |
     This library handles the low-level details of NTLM authentication for use in authenticating 
