@@ -1,31 +1,35 @@
 {% set name = "ntlm-auth" %}
 {% set version = "1.5.0" %}
-{% set sha256 = "c9667d361dc09f6b3750283d503c689070ff7d89f2f6ff0d38088d5436ff8543" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: c9667d361dc09f6b3750283d503c689070ff7d89f2f6ff0d38088d5436ff8543
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
+    - pip
   imports:
     - ntlm_auth
+  commands:
+    - pip check
 
 about:
   home: https://github.com/jborean93/ntlm-auth
